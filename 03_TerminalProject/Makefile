@@ -1,4 +1,4 @@
-filelooker: *.c
+Show: *.c
 	gcc Show.c -lncursesw -o Show
 
 clean:

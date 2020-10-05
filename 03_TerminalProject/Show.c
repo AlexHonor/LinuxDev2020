@@ -106,7 +106,7 @@ int main (int argc, const char** argv)
         }
 
         int y = 2;
-        for (int line = current_top_line; line < current_top_line + LINES - 2 * DX - 1; line++) {
+        for (int line = current_top_line; line < min(text->size, current_top_line + LINES - 2 * DX - 1); line++) {
             mvwprintw(win, y++, 1, "%3d: %s\n", line + 1, text->buffer[line]);
         }
         box(win, 0, 0);
