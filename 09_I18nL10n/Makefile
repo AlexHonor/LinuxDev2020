@@ -17,4 +17,6 @@ po/guess.pot: guess.c
 clean:
 	rm -f guess
 	rm -f po/*.pot~ po/*.po~ changes.pot
-	rm -rf .mo
+	rm -f po/*/LC_MESSAGES/*.mo
+
+.PHONY: clean
