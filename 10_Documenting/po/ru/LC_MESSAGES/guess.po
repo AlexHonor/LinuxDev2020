@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: guess 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-22 21:07+0300\n"
+"POT-Creation-Date: 2020-11-22 21:13+0300\n"
 "PO-Revision-Date: 2020-11-16 21:25+0300\n"
 "Last-Translator: Alexey <alexey@alexey>\n"
 "Language-Team: Russian\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: guess.c:276
+#: guess.c:282
 #, c-format
 msgid ""
 "This is a program that guesses a number by midpoint division.\n"
@@ -35,30 +35,30 @@ msgstr ""
 "    --help - показывает эту страницу с помощью.\n"
 "\n"
 
-#: guess.c:303
+#: guess.c:304
 #, c-format
 msgid "Think of a number between %s and %s.\n"
 msgstr "Загадайте число от %s до %s.\n"
 
-#: guess.c:310
+#: guess.c:311
 #, c-format
 msgid "Is number greater than %s\n"
 msgstr "число больше %s?\n"
 
-#: guess.c:316
+#: guess.c:317
 msgid "yes"
 msgstr "да"
 
-#: guess.c:317
+#: guess.c:318
 msgid "no"
 msgstr "нет"
 
-#: guess.c:324
+#: guess.c:325
 #, c-format
 msgid "Incorrect answer, input either 'yes' or 'no'.\n"
 msgstr "Некорректный ответ, введите 'да' или 'нет'.\n"
 
-#: guess.c:328
+#: guess.c:329
 #, c-format
 msgid "Your number is %s\n"
 msgstr "Загадано число %s\n"

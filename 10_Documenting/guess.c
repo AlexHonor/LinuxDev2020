@@ -268,6 +268,12 @@ char *arabicToRoman(int num) {
 int main(int argc, const char **argv) { 
     setlocale (LC_ALL, "");
     
+    //bindtextdomain ("guess", "/usr/share/locale/");
+    // For testing
+    bindtextdomain ("guess", "po");
+    
+    textdomain ("guess");
+
     int use_roman = argc > 1 && !strcmp(argv[1], "-r");
 
     int show_help = argc > 1 && !strcmp(argv[1], "--help");
@@ -294,11 +300,6 @@ int main(int argc, const char **argv) {
         outputTable = arabic;
     }
 
-    //bindtextdomain ("guess", "/usr/share/locale/");
-    // For testing
-    bindtextdomain ("guess", "po");
-    
-    textdomain ("guess");
 
     printf(_("Think of a number between %s and %s.\n"), outputTable[0], outputTable[99]);   
     
