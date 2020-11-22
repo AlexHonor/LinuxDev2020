@@ -1,11 +1,41 @@
+/**
+ * @file guess.c
+ * @author Alexey Gorbonosov
+ * @date 22 Nov 2020
+ * @brief Guessing program
+ *
+ * Blablabla some description of midpoint division and guessing with it.
+ * @see https://github.com/AlexHonor/LinuxDev2020
+ */
+
+/**
+ * @mainpage Main page
+ *
+ * ###General
+ * This is a program that guesses a number by midpoint division.
+ * 
+ * ###Command line arguments:
+ *   -  empty - the program will simply work as a guessing program.
+ *   -  -r - will force the program to use roman letters instead.
+ *   -  --help - brings up this help page.
+ * 
+ */
+
 #include <stdio.h>
 #include <string.h>
 
 #include <libintl.h>
 #include <locale.h>
 
+/**
+ * @brief Tranalation macros.
+ */
 #define _(STRING) gettext(STRING)
 
+
+/**
+ * @brief All numbers from 1 to 100 in roman form.
+ */
 char *roman[] = {
 "I",
 "II",
@@ -109,6 +139,9 @@ char *roman[] = {
 "C"
 };
 
+/**
+ * @brief All numbers from 1 to 100 in arabic form.
+ */
 char *arabic[] = {
 "1",
 "2",
@@ -212,6 +245,10 @@ char *arabic[] = {
 "100"
 };
 
+/**
+ * @brief returns arabic number corresponding to the roman number given in num.
+ * @param num string representing a roman number.
+ */
 int romanToArabic(char *num) {
     for (int i = 0; i < 100; i++) {
         if (!strcmp(roman[i], num)) {
@@ -220,6 +257,10 @@ int romanToArabic(char *num) {
     }
 }
 
+/**
+ * @brief returns roman number corresponding to the arabic number given in num.
+ * @param num int representing an arabic number.
+ */
 char *arabicToRoman(int num) {
     arabic[num - 1];
 }

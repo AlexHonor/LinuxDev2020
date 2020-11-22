@@ -1,4 +1,4 @@
-all: guess po/ru/LC_MESSAGES/guess.mo
+all: guess po/ru/LC_MESSAGES/guess.mo html
 
 guess: guess.c
 	gcc $< -o $@
@@ -14,7 +14,13 @@ po/guess.pot: guess.c
 	xgettext -k_ -c guess.c -o changes.pot
 	msgmerge -U $@ changes.pot
 
+html: Doxyfile guess.c
+	doxygen Doxyfile
+	rm -rf latex
+
 clean:
+	rm -rf html
+	rm -rf latex
 	rm -f guess
 	rm -f po/*.pot~ po/*.po~ changes.pot
 	rm -rf po/*/LC_MESSAGES/*.mo

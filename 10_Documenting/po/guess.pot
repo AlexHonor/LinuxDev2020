@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: guess 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-22 19:54+0300\n"
+"POT-Creation-Date: 2020-11-22 21:07+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: alex alex alex@alex\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: guess.c:235
+#: guess.c:276
 #, c-format
 msgid ""
 "This is a program that guesses a number by midpoint division.\n"
@@ -28,30 +28,30 @@ msgid ""
 "\n"
 msgstr ""
 
-#: guess.c:262
+#: guess.c:303
 #, c-format
 msgid "Think of a number between %s and %s.\n"
 msgstr ""
 
-#: guess.c:269
+#: guess.c:310
 #, c-format
 msgid "Is number greater than %s\n"
 msgstr ""
 
-#: guess.c:275
+#: guess.c:316
 msgid "yes"
 msgstr ""
 
-#: guess.c:276
+#: guess.c:317
 msgid "no"
 msgstr ""
 
-#: guess.c:283
+#: guess.c:324
 #, c-format
 msgid "Incorrect answer, input either 'yes' or 'no'.\n"
 msgstr ""
 
-#: guess.c:287
+#: guess.c:328
 #, c-format
 msgid "Your number is %s\n"
 msgstr ""
