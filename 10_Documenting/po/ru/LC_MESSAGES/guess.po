@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: guess 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-16 21:25+0300\n"
+"POT-Creation-Date: 2020-11-22 19:54+0300\n"
 "PO-Revision-Date: 2020-11-16 21:25+0300\n"
 "Last-Translator: Alexey <alexey@alexey>\n"
 "Language-Team: Russian\n"
@@ -18,30 +18,47 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: guess.c:39
+#: guess.c:235
+#, c-format
+msgid ""
+"This is a program that guesses a number by midpoint division.\n"
+"Command line arguments:\n"
+"     empty - the program will simply work as a guessing program.\n"
+"    -r - will force the program to use roman letters instead.\n"
+"    --help - brings up this help page.\n"
+"\n"
+msgstr ""
+"Эта программа угадывает числом методом деления пополам.\n"
+"Агрументы командной строки:\n"
+"     <пусто> - программа просто отработает находя число.\n"
+"    -r - заставляет программу использовать римские цифры.\n"
+"    --help - показывает эту страницу с помощью.\n"
+"\n"
+
+#: guess.c:262
+#, c-format
+msgid "Think of a number between %s and %s.\n"
+msgstr "Загадайте число от %s до %s.\n"
+
+#: guess.c:269
+#, c-format
+msgid "Is number greater than %s\n"
+msgstr "число больше %s?\n"
+
+#: guess.c:275
+msgid "yes"
+msgstr "да"
+
+#: guess.c:276
+msgid "no"
+msgstr "нет"
+
+#: guess.c:283
 #, c-format
 msgid "Incorrect answer, input either 'yes' or 'no'.\n"
 msgstr "Некорректный ответ, введите 'да' или 'нет'.\n"
 
-#: guess.c:25
+#: guess.c:287
 #, c-format
-msgid "Is number greater than %d\n"
-msgstr "число больше %d?\n"
-
-#: guess.c:18
-#, c-format
-msgid "Think of a number between 1 and 100.\n"
-msgstr "Загадайте число от 1 до 100.\n"
-
-#: guess.c:43
-#, c-format
-msgid "Your number is %d\n"
-msgstr "Загадано число %d\n"
-
-#: guess.c:32
-msgid "no"
-msgstr "нет"
-
-#: guess.c:31
-msgid "yes"
-msgstr "да"
+msgid "Your number is %s\n"
+msgstr "Загадано число %s\n"

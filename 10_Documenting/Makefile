@@ -7,7 +7,7 @@ po/%/LC_MESSAGES/guess.mo: po/%/LC_MESSAGES/guess.po
 	mkdir -p `dirname $@`
 	msgfmt $< -o $@
 
-po/%/LC_MESSAGES/guess.po: po/%/LC_MESSAGES/guess.pot
+po/%/LC_MESSAGES/guess.po: po/guess.pot
 	msgmerge -U $@ $<
 
 po/guess.pot: guess.c
@@ -17,5 +17,5 @@ po/guess.pot: guess.c
 clean:
 	rm -f guess
 	rm -f po/*.pot~ po/*.po~ changes.pot
-	rm -rf po/*/LC_MESSAGES/*
+	rm -rf po/*/LC_MESSAGES/*.mo
 	rm -rf po/ru/*.mo
